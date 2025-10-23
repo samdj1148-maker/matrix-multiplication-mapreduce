@@ -1,5 +1,4 @@
 name: Run Python Script
-
 on:
   push:
     branches: [ main ]
@@ -24,7 +23,7 @@ jobs:
       run: python main.py
     
     - name: Upload output.txt as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: output-file
         path: output.txt
